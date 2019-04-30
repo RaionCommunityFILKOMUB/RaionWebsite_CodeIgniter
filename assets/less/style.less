@@ -1,0 +1,464 @@
+// Main Font
+@font-one   		: 'Lato', sans-serif;
+@font-two   		: 'Oswald', sans-serif;
+@font-three 		: 'Roboto', sans-serif;
+
+// Theme Color
+@color-dark-blue  	: #0D0E5E;
+@color-ligth-blue 	: #3B3B91;
+@color-amber-one  	: #EF9A04;
+@color-amber-two  	: #EEC448;
+
+// Monochrome Color
+@color-dark  		: #000000;
+@color-ligth 		: #FFFFFF;
+
+// General Class
+.no-padding{
+	padding: 0px;
+}
+.no-padding-left{
+	padding-left: 0px;
+}
+.no-padding-right{
+	padding-right: 0px;
+}
+.no-margin{
+	margin: 0px;
+}
+
+// ============================ Style For Navbar ==============================
+.navbar{
+	padding: 20px 50px;
+	@media screen and (max-width: 768px) {
+		padding: 20px;
+	}
+	.nav-item{
+		padding-left: 30px;
+		.nav-link{
+			font-family: @font-three;
+			color: @color-ligth;
+		}
+		.link-active{
+			color: @color-amber-one;
+		}
+	}
+}
+.bg-dark{
+	background-color: @color-dark-blue !important;
+}
+// =========================== Style For Jumbotron ============================
+.jumbotron{
+	height: 100vh;
+	background-image: url("../img/non-projek/jumbotron.jpg");
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 0px;
+	.wrapper-jumbotron{
+		height: 100vh;
+		background: linear-gradient(to bottom, rgba(13,14,94,1), rgba(13,14,94,0.98),rgba(13,14,94,0.94),rgba(239,154,4,0.60), rgba(239,154,4,0.50));
+	}
+	.wrapper-jumbotron-content{
+		color: @color-ligth;
+		position: relative;
+		top: 300px;
+		.raion{
+			color: @color-amber-one;
+		}
+		.sub-title-jumbotron{
+			font-family: @font-three;
+			margin-bottom: 5px;
+		}
+		.main-title-jumbotron{
+			font-family: @font-two;
+			margin-bottom: 25px;
+		}
+		.desc-jumbotron{
+			line-height: 1.5em;
+			font-size: 1.1em;
+			font-family: @font-three;
+		}
+	}
+}
+// ============================= Style For Summary ==================================
+.summary{
+	background-image: url("https://images.unsplash.com/3/doctype-hi-res.jpg?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=712fa3e4441f895bb401dfa66e6528c3&auto=format&fit=crop&w=1946&q=80");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+.wrapper-summary{
+	background: linear-gradient(to bottom, rgba(13,14,94,0.99), rgba(13,14,94,0.95));
+	color:@color-ligth;
+	padding: 150px 100px;
+	font-family: @font-three;
+	@media screen and (max-width: 768px) {
+		padding: 50px 2px;
+	}
+	.raion-community{
+		font-family: @font-two;
+		font-size: 2em;
+		@media screen and (max-width: 768px) {
+			text-align: left;
+		}
+		.raion{
+			color: @color-amber-one;
+		}
+	}
+	.main-summary{
+		line-height: 1.7em;
+		@media screen and (max-width: 768px) {
+			text-align: justify;
+		}
+	}
+	.summary-division{
+		padding: 100px 0px;
+		@media screen and (max-width: 768px) {
+			padding: 20px 0px;
+		}
+		.main-title-summary{
+			padding: 20px 0 0 0;
+			font-family: @font-two;
+			font-size: 1.4em;
+			color: @color-amber-two;
+		}
+		.desc-summary{
+			line-height: 1.7em;
+			@media screen and (max-width: 768px){
+				text-align: justify;
+			}
+		}
+	}
+}
+
+// ============================= Style For Work of Raion ================================
+.wrapper-projek{
+	position: relative;
+	width: 100%;
+	.wrapper-circle{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		padding: 50px;
+		background: linear-gradient(to bottom, rgba(255,0,0,0.95), rgba(255,0,0,0.89)) !important;
+		color: @color-ligth;
+		@media screen and (max-width: 500px) {
+			padding: 30px;
+		}
+		.main-title-projek{
+			margin-bottom: 0px;
+			font-family: @font-two;
+		}
+		.sub-title-projek{
+			font-family: @font-three;
+		}
+	}
+	.wrapper-circle-two{
+		.wrapper-circle;
+		background: linear-gradient(to bottom, rgba(13,14,94,0.95), rgba(13,14,94,0.89)) !important;
+	}
+	.wrapper-circle-three{
+		.wrapper-circle;
+		background: linear-gradient(to bottom, rgba(239,154,4,0.95), rgba(239,154,4,0.89)) !important;
+	}
+	.wrapper-circle-four{
+		.wrapper-circle;
+		background: linear-gradient(to bottom, rgba(59,59,145,0.95), rgba(59,59,145,0.89)) !important;
+	}
+	.wrapper-circle-five{
+		.wrapper-circle;
+		background: linear-gradient(to bottom, rgba(238,196,72,0.95), rgba(238,196,72,0.89)) !important;
+	}
+	.wrapper-circle-six{
+		.wrapper-circle;
+		background: linear-gradient(to bottom, rgba(183, 12, 232, 0.95), rgba(183, 12, 232, 0.89)) !important;
+	}
+	.circle{
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		background-image: url('../img/projek/1.jpg');
+		background-size: cover;
+		transition: .3s;
+		margin-bottom: 30px;
+	}
+	.wrapper-circle:hover, 
+	.wrapper-circle-two:hover, 
+	.wrapper-circle-three:hover, 
+	.wrapper-circle-four:hover,
+	.wrapper-circle-five:hover,
+	.wrapper-circle-six:hover{
+		padding: 0px;
+		transition: .5s;
+		overflow: hidden;
+		.circle{
+			width: 100%;
+			height: 100%;
+			border-radius: 0;
+			transition: ease .5s;
+			-webkit-transform: scale(1.2);
+			-ms-transform: scale(1.2);
+			-o-transform: scale(1.2);
+			transform: scale(1.2);
+		}
+	}
+}
+
+// =========================== Style For Our Support ================================
+.our-support{
+	background: #efefef;
+	padding: 100px;
+	color: @color-dark;
+	@media screen and (max-width: 768px) {
+		padding: 20px 0px;
+	}
+	.main-title-our-support{
+		font-size: 2.5em;
+		font-family: @font-three;
+		color: @color-dark-blue;
+		font-weight: bold;
+	}
+	.sub-title-our-support{
+		color: #333;
+		font-family: @font-three;
+	}
+	.wrapper-logo{
+		padding: 50px 50px;
+		img{
+			@media screen and (max-width: 500px) {
+				width: 100px;
+			}
+		}
+	}
+}
+// =============================== Style for Maps ======================================
+#map{
+	width: 100%;
+	height: 620px;
+	background-color: grey;
+}
+// ================================= Footer ===============================
+.footer{
+	padding: 60px 40px 20px 40px;
+	background-color: @color-dark-blue;
+	color: @color-ligth;
+	.title-footer{
+		font-family: @font-one;
+		font-weight: bold;
+		color: @color-amber-two;
+	}
+	.desc-footer{
+		font-family: @font-three;
+		line-height: 1.4em;
+		color: #ccc;
+	}
+	.fab{
+		color: @color-amber-one;
+		padding-right: 10px;
+	}
+	.footer-link{
+		margin-bottom: 5px;
+		a{
+			color: #efefef;
+		}
+	}
+	.wrapper-footer-link{
+		@media screen and (max-width: 768px) {
+			text-align: left !important;
+		}
+	}
+}
+
+.author{
+	background-color: #0a0b4d;
+	color: @color-ligth;
+	padding: 10px;
+	.raion{
+		color: @color-amber-one;
+	}
+}
+
+
+// ============================== member HTML =====================
+.wrapper-member{
+	.card{
+		.card-title{
+			font-family: @font-three;
+			color: @color-dark-blue;
+			margin-bottom: 0px;
+		}
+		.jabatan{
+			color: @color-amber-one;
+			font-size: 14px;
+			font-family: @font-one;
+		}
+		.card-text{
+			margin-top: 10px;
+			color: #888;
+		}
+		.social-member{
+			margin-top: 50px;
+			.fab{
+				padding-right: 20px;
+			}
+			.fa-instagram{
+				color: #fb3958;
+			}
+			.fa-linkedin{
+				color:  #0077B5;
+			}
+			.fa-facebook{
+				color: #3b5998;
+			}
+		}
+	}
+	.card-one{
+		min-height: 480px;
+	}
+	.card-two{
+		min-height: 225px;
+	}
+}
+
+.wrapper-portofolio{
+	padding: 50px 0;
+	.main-title{
+		font-family: @font-three;
+		color: @color-dark-blue;
+	}
+	.desc{
+		font-family: @font-one;
+	}
+}
+.filterDiv {
+	display: none;
+}
+.show {
+	display: block;
+}
+.nav{
+	margin-left: 40px;
+	margin-bottom: 40px;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+	background-color: @color-dark-blue;
+}
+// =========================== Section proker
+.item{
+	position: relative;
+	overflow: hidden;
+	img{
+		width: 100%;
+		height: 310px;
+		-webkit-transition: all .3s ease;
+		-o-transition: all .3s ease;
+		transition: all .3s ease;
+	}
+}
+.item:hover img{
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.item-overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(239,154,4,.8);
+	padding: 200px 50px;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+	.content-overlay{
+		.main-title{
+			color: @color-ligth;
+			margin-bottom: -5px;
+			font-family: @font-two;
+			font-size: 1.8em;
+		}
+		.sub-title{
+			margin-top: 0px;
+			color: @color-ligth;
+			font-family: @font-one;
+		}
+	}
+}
+.item-overlay2{
+	.item-overlay;
+	background-color: rgba(59,59,145,.8);
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+}
+.item-overlay3{
+	.item-overlay;
+	background-color: rgba(255,0,0,.8);
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+}
+.item-overlay4{
+	.item-overlay;
+	background-color: rgba(13,14,94,.8);
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+}
+.item-overlay:hover, .item-overlay2:hover, .item-overlay3:hover, .item-overlay4:hover{
+	background-color: rgba(13,14,94,0);
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+}
+.more{
+	padding: 100px 0;
+	.card-proker{
+		min-height: 520px;
+		position: relative;
+		box-shadow: inset 0 2px 4px 0 hsla(0, 0%, 0%, 0.08);
+		.img-proker{
+			position: absolute;
+			height: 100%;
+			width: 100%;
+		}
+		.wrapper-workshop{
+			padding: 30px;
+			.title{
+				font-family: @font-one;
+				font-weight: bold;
+				margin-bottom: 50px;
+				color: #999;
+			}
+			.desc{
+				font-family: @font-one;
+				font-size: 26px;
+				margin-bottom: 70px;
+			}
+			.sub-desc{
+				font-size: 18px;
+				font-family: @font-one;
+				color: #999;
+			}
+		}
+	}
+}
+
+.desainer{
+	font-family: @font-one;
+	font-size: 34px;
+}
+
+.carousel-inner{
+	margin-top: -62px;
+}
+.carousel-item{
+	height: 700px;
+}
+#detail-project{
+	padding: 100px;
+}

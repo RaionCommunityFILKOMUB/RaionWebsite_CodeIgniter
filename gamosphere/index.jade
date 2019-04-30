@@ -1,0 +1,271 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    title Gamosphere - Let's Be Friend Through The Game
+    link(href='https://fonts.googleapis.com/css?family=Oswald:300,400,700', rel='stylesheet')
+    link(rel='shortcut icon', href='http://i.imgur.com/NcwhOVd.png')
+    // Bootstrap
+    link(href='assets-gamosphere/css/bootstrap.min.css', rel='stylesheet')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css')
+    link(href='assets-gamosphere/css/owl.carousel.css', rel='stylesheet')
+    link(href='assets-gamosphere/css/owl.theme.css', rel='stylesheet')
+    link(href='assets-gamosphere/css/style.css', rel='stylesheet')
+    // HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+  body
+    .loading
+      .spinner.spinner-1
+    #main_menu.navbar.navbar-default(role='navigation')
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle(data-target='.navbar-menubuilder', data-toggle='collapse', type='button')
+            span.sr-only Toggle navigation
+            span.icon-bar(id="icon1")
+            span.icon-bar(id="icon2")
+            span.icon-bar(id="icon3")
+          a.navbar-brand
+            img(src='assets-gamosphere/img/logo.png')
+        .collapse.navbar-collapse.navbar-menubuilder
+          ul.nav.navbar-nav
+            li
+              a(href='#home') HOME
+            li
+              a(href='#about') ABOUT
+            li
+              a(href='#speaker') SPEAKER
+            li
+              a(href='#ticket') TICKET
+            li
+              a(href='#location') LOCATION
+            li
+              a(href='#register') REGISTER
+            li
+              a(href='#contact') CONTACT US
+
+    section.hero  
+      .bg-text
+        img(src='assets-gamosphere/img/bunderan.png')
+      .brand
+        .logo
+          img(src='assets-gamosphere/img/logo-raion.png')
+        .text
+          .title SEMINAR 
+            strong NASIONAL
+          .big GAMOSPHERE
+          .sub LET'S BE FRIEND THROUGH THE GAME
+          .time 12.11.16
+      .satellite.gbr     
+        img(src='assets-gamosphere/img/satellite.png')
+      .saturn.gbr
+        img(src='assets-gamosphere/img/saturn.png')
+      .jupiter.gbr
+        img(src='assets-gamosphere/img/jupiter.png')
+      .earth.gbr
+        img(src='assets-gamosphere/img/earth.png')
+      .saturn2.gbr
+        img(src='assets-gamosphere/img/saturn2.png')
+      .star.star1(id='str1')
+      .star.star2(id='str2')
+      .star.star3(id='str3')
+      .star.star2(id='str4')
+      .star.star3(id='str5')
+      .star.star2(id='str6')
+      .star.star3(id='str7')
+      .star.star2(id='str8')
+      .star.star1(id='str9')
+      .star.star2(id='str10')
+    
+    section.about
+      .container
+        .shape
+          .box-left
+          .box-middle
+          .box-right
+        .col-sm-6.maskot
+          img(src='assets-gamosphere/img/maskot.png')
+        .col-sm-5.text
+          .title GAMOSPHERE 
+            strong 2016
+          .sub LET'S BE FRIEND THROUGH THE GAME
+          p
+            |Acara seminar merupakan rangakaian acara kedua Gamosphere. 
+            |Pada seminar ini, akan dihadiri 3 pemateri. Bertemakan
+            |“Make a game trend or make a trend game”, akan menghadirkan
+            |3 pemateri yang akan membahas developing game from a trend,
+            |designing trend game, dan crowdfunding. Pada seminar ini akan
+            |dihadiri pemateri yang sudah ahli dalam bidangnya. 
+            br
+            br
+            |Pemateri berasal dari startup-startup yang sudah berkembang 
+            |besar di Indonesia. Pembahasan developing game from a trend dari Own Game,designing trend game berasal dari Gameloft dan 
+            |crowdfunding berasal dari TinkerGame.Seminar ini akan diikuti oleh 
+            |mahasiswa dan masyarakat umum
+        .clearfix
+    
+    section.speaker
+      img.pattern(src='assets-gamosphere/img/speaker-pattern.png')
+      .container
+        .rocket
+          img(src='assets-gamosphere/img/rocket-big.png')
+        .col-md-3.text
+          .title SPEAKERS
+          .sub SEMINAR NASIONAL GAMOSPHERE
+        .col-md-3.brand.brand1
+          .img
+            img(src='assets-gamosphere/img/tinker.png')
+          p
+            |Developer of 
+            |pale blue, indonesian 
+            |most backed 
+            |kickstarter game.
+        .col-md-3.brand.brand2
+          .img
+            img(src='assets-gamosphere/img/gameloft.png')
+          p
+             |From developer 
+             |of blockbuster 
+             |mobile game
+        .col-md-3.brand.brand3
+          .img
+            img(src='assets-gamosphere/img/own.png')
+          p
+             |Developer of tahu 
+             |bulat, the viral 
+             |indonesian unique 
+             |clicker game
+        .clearfix
+    
+    section.ticket
+      .container
+        .city
+          img(src='assets-gamosphere/img/city-shadow.png')
+        h2 OUR TICKET
+        .col-md-3.sale(id='sale1')
+          .date 10-16 OKT
+          .bot PRESALE
+          .bot 50K
+        .col-md-3.sale(id='sale2')
+          .date 17-31 OKT
+          .bot SALE 1
+          .bot 65K
+        .col-md-3.sale.active(id='sale3')
+          .date 1-10 NOV
+          .bot SALE 2
+          .bot 75K
+        .col-md-3.sale(id='sale4')
+          .date 12 NOV
+          .bot OTS
+          .bot 100K
+        .clearfix
+          
+    section.map
+      #map
+      .info
+        .title KARTINI IMPERIAL BUILDING MALANG
+        .address Jl. Tangkuban Perahu No.1B, Kauman, Klojen, Kota Malang, Jawa Timur 65119
+        
+    section.register
+      .col-md-6.left
+        img.bg(src='assets-gamosphere/img/acara1.jpg')
+        .overlay
+        .content
+          img.icon(src='assets-gamosphere/img/icon-note.png')
+          .title Daftar Sekarang Di Eventbrite
+          a(href='http://gamosphere.eventbrite.com' target='_blank') Click Here
+      .col-md-6.right
+        img.bg(src='assets-gamosphere/img/acara2.jpg')
+        .overlay
+        .content
+          img.icon(src='assets-gamosphere/img/icon-stand.png')
+          br
+          span.negate Kami Juga Membuka Stand
+          .col-md-6.stand GAZEBO
+            br
+            |PERPUSTAKAAN
+            br
+            |UNIVERSITAS BRAWIJAYA
+          .col-md-6.stand GAZEBO
+            br
+            |FILKOM
+            br
+            |UNIVERSITAS BRAWIJAYA
+      .clearfix  
+      
+    section.contact
+      img.bgcorner(src='assets-gamosphere/img/raion-logo-pojok.png')
+      img.pattern(src='assets-gamosphere/img/footer-pattern.png')
+      .container
+        .col-md-4.col
+          h3 Supported By
+          img(src='assets-gamosphere/img/partner/filkom.png')
+          img(src='assets-gamosphere/img/partner/myrepublic.png')
+          img(src='assets-gamosphere/img/partner/ub.png')
+          img(src='assets-gamosphere/img/partner/blewo.png')
+          img(src='assets-gamosphere/img/partner/kopi.png')
+        .col-md-4.col
+          h3 Media Partner
+          img(src='assets-gamosphere/img/partner/techinasia.png')
+          img(src='assets-gamosphere/img/partner/infoub.png')
+          img(src='assets-gamosphere/img/partner/mc.png')
+          img(src='assets-gamosphere/img/partner/evmalang.png')
+          img(src='assets-gamosphere/img/partner/dn.png')
+          img(src='assets-gamosphere/img/partner/halomalang.png')
+          img(src='assets-gamosphere/img/partner/eventarema.png')
+          img(src='assets-gamosphere/img/partner/teknoevent.png')
+          img(src='assets-gamosphere/img/partner/ubsos.png')
+          img(src='assets-gamosphere/img/partner/cp.png')
+        .col-md-4.cp.col
+          h3 Contact Us
+          .col-xs-1
+            img(src='assets-gamosphere/img/maps.png')
+          .col-xs-10.address
+            |Raion Community
+            br
+            Strong Fakultas Ilmu Komputer
+            br
+            Strong Universitas Brawijaya
+            br
+            |Jl. Veteran No 8 Filkom Gedung D1.2 Malang 65145
+          .clearfix
+            
+          .col-xs-1
+            img(src='assets-gamosphere/img/wa.png')
+          .col-xs-10.wa
+            Strong 081-236-100-458 
+            | (ROLIAND)
+            br
+            Strong 085-391-984-424 
+            | (DELLA)
+          .clearfix
+            
+          .col-xs-1
+            img(src="assets-gamosphere/img/line.png")
+          .col-xs-6
+            |Official Account
+            br
+            strong @zza7415l
+          .col-xs-4
+            img(src="assets-gamosphere/img/qr.png")
+              
+    section.footer 
+      .text Copyright &copy; 2016, Raion Community. 
+        span.fa.fa-code 
+        |  with 
+        span.fa.fa-heart 
+        |  by GLDev. 
+      
+    // jQuery (necessary for Bootstrap's JavaScript plugins)
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+    // Include all compiled plugins (below), or include individual files as needed
+    script(src='assets-gamosphere/js/bootstrap.min.js')
+    script(src='assets-gamosphere/js/owl.carousel.js')
+    script(src='assets-gamosphere/js/function.js')
+    script(src="assets-gamosphere/js/animatescroll.noeasing.js")
+    script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDZgzfCU7s7CGhQEXMcNSXBMYlBMBbfVlU&callback=initMap')

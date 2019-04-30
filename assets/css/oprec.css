@@ -1,0 +1,63 @@
+h1{
+    text-align: center;
+    color: rgb(240, 181, 55) !important;
+    margin-bottom: 20px !important;
+    margin-top: 25px !important;
+}
+
+body{
+    background-color: rgba(13, 14, 94, 0.99) !important;
+}
+
+.jumbotron-fluid{
+    padding:2rem 1rem;
+    margin-bottom:2rem;
+    background-color:white;
+}
+
+#img-upload{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+#hidden {
+    display: none;
+}
+
+form{
+    padding: 20px;
+}
+
+.buttonHolder {
+    text-align: center;
+}
+
+#logoRaionHolder{
+    text-align: center;
+}
+
+#logoArtist{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+#logoProgrammer{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+#logoDesigner{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+#logoHolder{
+    text-align: center;
+}
+
+#buttonSubmitForm{
+    width: 100%;
+}
